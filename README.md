@@ -4,9 +4,18 @@ Generator of random, fantasy-like names for .NET.
 
 ## Usage
 
+Generating one name:
+
 ```cs
 var nameGenerator = new NameGenerator();
 var name = nameGenerator.Generate();
+```
+
+Generating multiple names at once:
+
+```cs
+var nameGenerator = new NameGenerator();
+var names = nameGenerator.GenerateMany().Take(100).ToList();
 ```
 
 ## Installation

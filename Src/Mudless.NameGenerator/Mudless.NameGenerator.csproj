@@ -10,6 +10,7 @@
     <PackageIcon>icon.png</PackageIcon>
     <Description>Fantasy name generator library.</Description>
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
+    <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>

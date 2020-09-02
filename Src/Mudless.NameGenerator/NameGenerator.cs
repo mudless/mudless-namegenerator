@@ -35,8 +35,7 @@ namespace Mudless.NameGenerator
 
                 var name = pattern.GetValue(_random);
 
-                name = name.ToLowerInvariant();
-                _normalizerExpression.Replace(name, m => m.Groups[0].Value.Substring(0, 2));
+                name = Normalize(name);
 
                 if (name.Length < _config.MinLength)
                 {
@@ -51,6 +50,20 @@ namespace Mudless.NameGenerator
             }
 
             return null;
+        }
+
+        private string Normalize(string name)
+        {
+            name = name.ToLowerInvariant();
+            return _normalizerExpression.Replace(name, m => m.Groups[0].Value.Substring(0, 2));
+        }
+
+        public IEnumerable<string> GenerateMany()
+        {
+            while (true)
+            {
+                yield return Generate();
+            }
         }
     }
 }

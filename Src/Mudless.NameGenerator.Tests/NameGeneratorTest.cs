@@ -1,6 +1,7 @@
 ﻿using FluentAssertions;
 using NUnit.Framework;
 using System;
+using System.Linq;
 
 namespace Mudless.NameGenerator.Tests
 {
@@ -17,6 +18,16 @@ namespace Mudless.NameGenerator.Tests
                 var name = nameGenerator.Generate();
                 name.Should().NotBeNullOrWhiteSpace();
             }
+        }
+        
+        [Test]
+        public void WhenGeneratingMany_ShouldRetunIterator()
+        {
+            var nameGenerator = new NameGenerator();
+
+            var names = nameGenerator.GenerateMany().Take(100).ToList();
+
+            names.Should().HaveCount(100);
         }
 
         [Test]
