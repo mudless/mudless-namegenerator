@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.1</TargetFramework>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Authors>Mudless</Authors>
+    <Company>Mudless</Company>
+    <RepositoryUrl>https://github.com/mudless/namegenerator</RepositoryUrl>
+    <PackageTags>name-generation, fantasy, rpg, name-generator, fantasy-name</PackageTags>
+    <PackageIcon>icon.png</PackageIcon>
+    <Description>Fantasy name generator library.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="NuGet\icon.jpg" Pack="true" PackagePath="" />
+  </ItemGroup>
+</Project>
