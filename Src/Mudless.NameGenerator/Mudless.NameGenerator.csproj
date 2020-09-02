@@ -5,13 +5,15 @@
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <Authors>Mudless</Authors>
     <Company>Mudless</Company>
-    <RepositoryUrl>https://github.com/mudless/namegenerator</RepositoryUrl>
+    <RepositoryUrl>https://github.com/mudless/mudless-namegenerator</RepositoryUrl>
     <PackageTags>name-generation, fantasy, rpg, name-generator, fantasy-name</PackageTags>
     <PackageIcon>icon.png</PackageIcon>
     <Description>Fantasy name generator library.</Description>
+    <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
   </PropertyGroup>
 
   <ItemGroup>
     <None Include="NuGet\icon.jpg" Pack="true" PackagePath="" />
+    <None Include="NuGet\LICENSE.txt" Pack="true" PackagePath="" />
   </ItemGroup>
 </Project>
